@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Weather Application</h1>
+
+    <!-- Current Weather Form -->
+    <form id="weatherForm">
+        <input type="text" id="cityInput" placeholder="Enter city name" required />
+        <button type="submit">Get Weather</button>
+    </form>
+    <div id="weatherResult"></div>
+
+    <hr>
+
+    <!-- Weather Forecast Form -->
+    <form id="forecastForm">
+        <input type="text" id="forecastCityInput" placeholder="Enter city name" required />
+        <input type="number" id="forecastDaysInput" placeholder="Number of days (1–7)" min="1" max="7" required />
+        <button type="submit">Get Forecast</button>
+    </form>
+    <div id="forecastResult"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
